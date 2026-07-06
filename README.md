@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Deployement Link
 
-wdd430-portfolio-6cu3palfz-dev-medina29s-projects.vercel.app
+https://wdd430-portfolio-6cu3palfz-dev-medina29s-projects.vercel.app/

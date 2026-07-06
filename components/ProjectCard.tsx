@@ -13,7 +13,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="p-4 border-l-4 border-blue-600 bg-gray-50 rounded">
-      <h3 className="text-xl text-gray-600 font-bold mb-2">{title}</h3>
+      <h3 className="text-xl text-blue-800 font-bold mb-2">{title}</h3>
       <p className="text-gray-700 mb-3">{description}</p>
       <p className="text-sm text-gray-600">
         <strong>Technologies:</strong> {technologies.join(", ")}

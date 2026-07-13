@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import NavLinks from "./NavLinks";
 export default function Header() {
   return (
     <header className="bg-blue-600 text-white py-4 shadow-md">
@@ -14,8 +14,16 @@ export default function Header() {
           <li>
             <Link href="/about">About</Link>
           </li>
+          <li>
+            <Link href="/projects">Projects</Link>
+          </li>
+          {/* <li>
+            <Link href="/contact">Contact</Link>
+          </li> */}
         </ul>
+        <NavLinks />
       </nav>
+      
     </header>
   );
 }

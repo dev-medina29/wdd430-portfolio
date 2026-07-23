@@ -24,7 +24,7 @@ export default function ProjectsPage() {
     <section className="space-y-6">
       <h1 className="text-3xl font-bold mb-4">Projects Overview</h1>
       <p className="text-lg text-gray-700">
-        Explore the projects featured in this portfolio.
+        Explore the projects featured in my portfolio.
       </p>
       <ProjectList projects={projects} />
     </section>

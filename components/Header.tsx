@@ -1,29 +1,25 @@
-import Link from "next/link";
 import NavLinks from "./NavLinks";
+
 export default function Header() {
   return (
-    <header className="bg-blue-600 text-white py-4 shadow-md">
-      <div id="header-title" className="text-2xl font-bold">
-        Medina MBEDI
+    <header className="bg-blue-600 text-white shadow-lg">
+      {/* Portfolio Title */}
+      <div className="text-center py-6">
+        <h1
+          id="header-title"
+          className="text-4xl md:text-5xl font-extrabold tracking-wide"
+        >
+          Medina MBEDI PORTFOLIO
+        </h1>
       </div>
-      <nav className="max-w-4xl mx-auto px-4 flex justify-between items-center">
-        <ul className="flex gap-6">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/projects">Projects</Link>
-          </li>
-          {/* <li>
-            <Link href="/contact">Contact</Link>
-          </li> */}
-        </ul>
+
+      {/* Navigation Bar */}
+      <nav
+        aria-label="Primary Navigation"
+        className="bg-blue-700 py-4 flex justify-center space-x-10 text-lg font-medium"
+      >
         <NavLinks />
       </nav>
-      
     </header>
   );
 }

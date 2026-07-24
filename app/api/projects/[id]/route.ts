@@ -1,6 +1,6 @@
-import { projects } from "../route";
-import { NextResponse } from 'next/server';
-import { getProjectById } from '../../../projects/lib/projects-db';
+// import { projects } from "../route";
+import { NextResponse } from "next/server";
+import { getProjectById } from "../../../projects/lib/projects-db";
 
 // export async function GET(
 //   _request: Request,
@@ -25,12 +25,11 @@ import { getProjectById } from '../../../projects/lib/projects-db';
 //   return Response.json(project);
 // }
 
-
 export async function GET(
   _request: Request,
-  context: { params: Promise<{ id: string }> }
+  context: { params: Promise<{ id: string }> },
 ) {
-  const { id } = await context.params;   // <-- await here
+  const { id } = await context.params; // <-- await here
   const numericId = Number(id);
 
   if (Number.isNaN(numericId)) {
